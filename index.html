@@ -1,105 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bike Shop - Home</title>
+    <title>Your Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Include Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
+
 <body>
+
     <header>
-        <div class="container">
-            <h1>Welcome to Our Bike Shop</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="bikes.html">Bikes</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Humphrey.</h1>
+        <p>Web Developer</p>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Explore Our Latest Collection</h2>
-            <p>Find the perfect bike for your ride!</p>
-            <a href="bikes.html" class="btn">View Bikes</a>
+    <section>
+        <!-- Bike Shop Project -->
+        <div class="portfolio-item">
+            <img src="images/bikeshop.png" alt="Bike Shop Project">
+            <h2>Bike Shop Project</h2>
+            <p>
+                The Bike Shop Project is an e-commerce website specializing in high-quality bicycles and accessories.
+                It features a user-friendly interface, secure checkout, and a responsive design for a seamless shopping experience.
+            </p>
+            <p>
+                Technologies used: HTML, CSS, JavaScript, Node.js, Express, MongoDB.
+            </p>
+            <a href="https://new-user3.github.io/motobikeshopmuigai.com/" target="_blank" class="cta-button">View Demo</a>
         </div>
-    </section>
 
-    <section class="featured">
-        <div class="container">
-            <h2>Featured Bikes</h2>
-            <div class="bike-grid">
-                <!-- Display featured bikes -->
-
-                <!-- Rockrider Bike -->
-                <div class="bike">
-                    <div id="rockriderCarousel" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/0c0bb89c-2e34-4b43-84cd-095946493ca6.70272a4367f400ac043e4d18f0eea13d.webp" alt="Rockrider Bike - Image 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/02c916e4-32b3-479b-b5b2-20dd1e4f0f14.8cd9edb942cc347f643b0593bdcd560b.webp" alt="Rockrider Bike - Image 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/7a4e7d1d-b5aa-4602-b842-3ab2adad5374.216f88f32df73d3b2d3e6c80ec5cef75.webp" alt="Rockrider Bike - Image 3">
-                            </div>
-                            <!-- Add more images for the carousel -->
-                        </div>
-                        <a class="carousel-control-prev" href="#rockriderCarousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#rockriderCarousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-
-                    <h3>Rockrider Bike</h3>
-                    <p>The Rockrider Bike is designed for both beginners and experienced riders, offering a perfect blend of performance and comfort. With its sleek design and advanced features, this bike is ideal for various terrains.</p>
-                    <p>Key Features:</p>
-                    <ul>
-                        <li>High-quality aluminum frame for durability</li>
-                        <li>Responsive disc brakes for reliable stopping power</li>
-                        <li>Smooth and efficient gear system for versatile riding</li>
-                        <!-- Add more features as needed -->
-                    </ul>
-                    <p>Price: $XXXX</p>
-                    <a href="#" class="btn view-details" data-bike="Rockrider Bike">View Details</a>
-                </div>
-
-                <!-- Add more featured bikes -->
-            </div>
+        <!-- Crochet Haven Project -->
+        <div class="portfolio-item">
+            <img src="images/crochethaven.png" alt="Crochet Haven Project">
+            <h2>Crochet Haven Project</h2>
+            <p>
+                Crochet Haven is a community-driven platform for crochet enthusiasts to share patterns, ideas, and connect with each other.
+                Users can create profiles, upload their creations, and engage in discussions within the vibrant crochet community.
+            </p>
+            <p>
+                Technologies used: HTML, CSS, JavaScript, React, Firebase.
+            </p>
+            <a href="https://new-user3.github.io/crochet-items.com/" target="_blank" class="cta-button">Explore Community</a>
         </div>
+
+        <!-- Add more projects as needed -->
+        <!-- You can copy and paste the structure below for each project -->
+        <!--
+        <div class="portfolio-item">
+            <img src="images/projectX.jpg" alt="Project X">
+            <h2>Project X</h2>
+            <p>Description of Project X.</p>
+            <a href="projectX-demo.html" target="_blank" class="cta-button">View Demo</a>
+        </div>
+        -->
+
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Bike Shop</p>
-        </div>
+        <p>&copy; 2024 Your Portfolio. All rights reserved.</p>
     </footer>
 
-    <div class="modal" id="bikeModal">
-        <div class="modal-content">
-            <span class="close" id="closeBtn">&times;</span>
-            <h2 id="modalTitle"></h2>
-            <p id="modalContent">
-                <!-- Bike details will be displayed here -->
-            </p>
-            <p>Contact us for more information or to make a purchase!</p>
-        </div>
-    </div>
-
-    <!-- Include Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
